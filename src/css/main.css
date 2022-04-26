@@ -5,3 +5,23 @@ video {
   width: 100%;
   height: auto;
 }
+.bckg {
+  background-color: rgb(115, 0, 10);
+}
+.shake {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.shake:hover {
+  background-color: black;
+  border-radius: 9999px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
