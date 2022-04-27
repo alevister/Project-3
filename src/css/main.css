@@ -44,6 +44,18 @@ p {
   font-size: 20px;
 }
 
+li {
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+h3 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
 .celebrate {
   position: relative;
   padding: 3rem;
@@ -97,7 +109,7 @@ p {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
