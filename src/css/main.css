@@ -96,6 +96,12 @@ h3 {
   padding-bottom: 4rem;
 }
 
+.right {
+  text-align: center;
+}
+.left {
+  text-align: center;
+}
 .active {
   opacity: -100%;
 }

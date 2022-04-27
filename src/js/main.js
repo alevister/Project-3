@@ -8,7 +8,7 @@ function toggleBackground() {
 button.addEventListener("click", toggleBackground);
 
 var active = 1;
-var previousButton = document.querySelector("#previous");
+var backButton = document.querySelector("#back");
 var nextButton = document.querySelector("#next");
 var slides = document.querySelectorAll(".slideshow > div");
 
@@ -23,9 +23,9 @@ function toggleSlide(from, to) {
   slides[to].classList.add("active");
 }
 
-function previous() {
+function back() {
   var from = active;
-  if (active <= 0) {
+  if (active <= 1) {
     active = slides.length - 1;
   } else {
     active--;
@@ -36,7 +36,7 @@ function previous() {
 function next() {
   var from = active;
   if (active >= slides.length - 1) {
-    active = 0;
+    active = 1;
   } else {
     active++;
   }
@@ -44,5 +44,5 @@ function next() {
 }
 
 setup();
-previousButton.addEventListener("click", previous);
+backButton.addEventListener("click", back);
 nextButton.addEventListener("click", next);
