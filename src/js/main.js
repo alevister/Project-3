@@ -46,3 +46,11 @@ function next() {
 setup();
 backButton.addEventListener("click", back);
 nextButton.addEventListener("click", next);
+
+var accordian = document.querySelector(".accordian");
+
+function toggleAccordian() {
+  accordian.classList.toggle("active");
+}
+
+accordian.addEventListener("click", toggleAccordian);
